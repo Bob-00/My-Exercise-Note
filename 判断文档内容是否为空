@@ -1,0 +1,14 @@
+text
+  //如何判断一个文件为空
+  ifstream ifs;
+	ifs.open(FILENAME, ios::in);
+  
+	char ch;
+	ifs >> ch;
+ 
+ 
+	if (ifs.eof())
+	{
+		cout << "文件为空" << endl;
+		
+  }
